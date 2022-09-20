@@ -46,6 +46,7 @@ else{
 printMessage('Twój ruch to: ' + playerMove);
 
 function displayResult(argComputerMove, argPlayerMove){
+    console.log('moves:', argComputerMove, argPlayerMove);
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
         printMessage('Ty wygrywasz!');
@@ -63,4 +64,5 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Tym razem przegrywasz :(');
     }
 }
+displayResult(computerMove, playerMove);
 
